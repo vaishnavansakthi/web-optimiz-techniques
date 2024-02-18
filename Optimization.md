@@ -162,13 +162,13 @@ In SetState, it is recommended to use a function rather than an object. The same
 Thus, instead of this:
 
 ```
-this.setState({correctData: !this.state.correctData});
+setState({correctData: !correctData});
 ```
 
 Use this:
 
 ```
-this.setState((prevState, props) => {
+setState((prevState, props) => {
     return {correctData: !prevState.correctData});
 }
 ```
