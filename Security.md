@@ -69,24 +69,24 @@ Arbitrary code execution is an attacker’s ability to run any code of his choic
 
 # Best Practices for React.js Security
 1. Secure basic authentication of your React app
-    1. Cookies protection
-    2. Encryption(like email and mobile number)
-    3. Hashing passwords
-    4. Validating and filtering data
-    5. Sessions
+    * Cookies protection
+    * Encryption(like email and mobile number)
+    * Hashing passwords
+    * Validating and filtering data
+    * Sessions
 2. Make sure that the HTML code is resilient
-    1. Disable HTML markups
-    2. Use escape characters
-    3. Utilize dangerouslySetInnerHTML and sanitize HTML
+    * Disable HTML markups
+    * Use escape characters
+    * Utilize dangerouslySetInnerHTML and sanitize HTML
 3. Use allowlist/blocklist and validation while URL parsing
 
 4. Always use the principle of least privilege when allowing a connection to any database
 5. Secure your React APIs
 
 6. Implement a Web Application Firewall (WAF)
-    1. Network-based firewall which is on the hardware level.
-    2. Host-based firewall that is integrated into the software.
-    3. Cloud-based WAF
+    * Network-based firewall which is on the hardware level.
+    * Host-based firewall that is integrated into the software.
+    * Cloud-based WAF
 7. Set up proper file management
 8. Never serialize sensitive data
     You can either use the serialize-javascript NPM module that will escape the rendered JSON
@@ -98,32 +98,23 @@ Arbitrary code execution is an attacker’s ability to run any code of his choic
 Reference Link: {https://www.linkedin.com/advice/1/how-can-you-secure-reactjs-applications-optimal-mhcof}
 
 ## 1. Use HTTPS and SSL
-    Reference Link: {https://create-react-app.dev/docs/using-https-in-development/}
-    1. HTTPS encrypts the data between your server and your client, preventing anyone
-    from intercepting or tampering with it.
-    2. SSL certificates verify the identity of your server and ensure that your users are
-    connecting to the right domain
+Reference Link: {https://create-react-app.dev/docs/using-https-in-development/}
+* HTTPS encrypts the data between your server and your client, preventing anyone from intercepting or tampering with it.
+*  SSL certificates verify the identity of your server and ensure that your users are connecting to the right domain
 ## 2. Sanitize user input and output
-    You can use libraries like DOMPurify or sanitize-html to help you with this task.
+* You can use libraries like DOMPurify or sanitize-html to help you with this task.
 ## 3. Implement authentication and authorization
-    1. You should implement authentication and authorization using secure methods and
-    protocols, such as JSON Web Tokens (JWT) or OAuth.
-    2. You should also store your credentials and tokens in a safe place, such as local
-    storage or cookies with the HttpOnly and Secure flags.
-    3. You can use libraries like Auth0 or Firebase to simplify this process.
+* You should implement authentication and authorization using secure methods and protocols, such as JSON Web Tokens (JWT) or OAuth.
+* You should also store your credentials and tokens in a safe place, such as local storage or cookies with the HttpOnly and Secure flags.
+* You can use libraries like Auth0 or Firebase to simplify this process.
 ## 4. Optimize your code and bundles
-    1. Hooks are also recommended over lifecycle methods.
-    2. Code splitting and lazy loading can reduce the size of your initial bundle by only
-    loading the necessary code for each route.
-    3. Performance tools such as React DevTools or Lighthouse can be used to measure and
-    enhance the quality and speed of your code.
+* Hooks are also recommended over lifecycle methods.
+* Code splitting and lazy loading can reduce the size of your initial bundle by only loading the necessary code for each route.
+* Performance tools such as React DevTools or Lighthouse can be used to measure and enhance the quality and speed of your code.
 ## 5. Update your dependencies and audit your packages
-    1. Regularly updating your dependencies and auditing your packages is a great way to
-    secure your React.js applications and improve their performance.
-    2. Dependencies are libraries or modules that you use in your application, such as
-    React, React Router, or Axios, while packages are the files or folders that contain
-    your dependencies, such as node_modules or package.json.
-    3. Tools like npm or yarn make updating and auditing your packages easy
+* Regularly updating your dependencies and auditing your packages is a great way to secure your React.js applications and improve their performance.
+* Dependencies are libraries or modules that you use in your application, such as React, React Router, or Axios, while packages are the files or folders that contain your dependencies, such as node_modules or package.json.
+* Tools like npm or yarn make updating and auditing your packages easy
 
 
 
